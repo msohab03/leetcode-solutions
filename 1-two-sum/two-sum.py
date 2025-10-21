@@ -3,12 +3,9 @@ class Solution:
         numsHash = {}
 
         for i in range(len(nums)):
-            numsHash[nums[i]] = i
-        
-        for i in range(len(nums)):
             complement = target - nums[i]
-
             if complement in numsHash and numsHash[complement] != i:
                 return [i, numsHash[complement]]
-        
+            
+            numsHash[nums[i]] = i
         return []
