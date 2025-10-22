@@ -18,6 +18,7 @@ class Solution:
                     kSum(k - 1, i + 1, target - nums[i])
                     # remove last from current array
                     current.pop()
+                # we dont want the bottom approach to be executed unless we have 2
                 return
             
             # start of two pointer approach
