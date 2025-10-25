@@ -19,5 +19,5 @@ class Solution:
                 if -(nums3[k] + nums4[l]) in ab:
                     count += ab[-(nums3[k] + nums4[l])]
                
-        print(ab)
+    
         return count
