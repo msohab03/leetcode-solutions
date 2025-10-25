@@ -12,9 +12,10 @@ class Solution:
                     ab[nums1[i] + nums2[j]] += 1
                 else:
                     ab[nums1[i] + nums2[j]] = 1
-        
+        # search for complement
         for k in range(len(nums3)):
             for l in range(len(nums4)):
+                # add number of times its occurred
                 if -(nums3[k] + nums4[l]) in ab:
                     count += ab[-(nums3[k] + nums4[l])]
                
