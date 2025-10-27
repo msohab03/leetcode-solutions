@@ -12,6 +12,6 @@ class Solution:
             
             for i in range(n):
                 for j in range(n // 2):
-                    mat[i][j], mat[i][-j - 1] = mat[i][- j - 1], mat[i][j]
+                    mat[i][j], mat[i][- j - 1] = mat[i][- j - 1], mat[i][j]
         
         return mat == target
