@@ -8,7 +8,7 @@ class Solution:
         
         for i in range(len(prefix)):
             if 0 <= i < n - 1:
-                if prefix[i] >= prefix[-1] - prefix[i]:
+                if prefix[i] >= prefix[n-1] - prefix[i]:
                     valid_splits += 1
 
         return valid_splits
