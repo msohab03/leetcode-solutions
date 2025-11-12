@@ -12,9 +12,11 @@ class Solution:
             curr = 0
             left = i - k
             right = i + k
-            curr = prefix[right] - prefix[left - 1]
+            
             if left == 0:
                 curr = prefix[right]
+            else:
+                curr = prefix[right] - prefix[left - 1]
             curr = curr // rng
             res[i] = curr
           
